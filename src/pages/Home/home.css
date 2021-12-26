@@ -4,3 +4,16 @@
 .d-flex {
     height: 100px;
 }
+#home-blockquote {
+    background: url("../../assets/img/bg-quote.jpg") center center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .blockquote .display-4 {
+        font-size: 24px;
+    }
+    .container-fluid {
+        padding-top: 0px;
+    }
+}

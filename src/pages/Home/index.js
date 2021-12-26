@@ -1,5 +1,6 @@
-import Header from "../../components/Header"
+import Header from "../../components/Header";
 import './home.css';
+
 import California from '../../assets/img/california.jpg';
 import Paris from '../../assets/img/paris.jpg';
 import Dublin from '../../assets/img/dublin.jpg';
@@ -9,6 +10,7 @@ import Passagens from '../../assets/img/icones/passagens.svg';
 import Bagagens from '../../assets/img/icones/bagagens.svg';
 import Praias from '../../assets/img/icones/praias.svg';
 import Turismo from '../../assets/img/icones/turismo.svg';
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -137,7 +139,21 @@ export default function Home() {
                             </p>
                         </div>
                     </div>
+                    <div className="mt-4">
+                        <Link to="/planos" className="btn btn-primary btn-lg">Comprar Planos </Link>
+                    
+                    </div>
                 </div>
+
+            </section>
+            <section id="home-blockquote" className="text-center text-white p-md-5">
+                <blockquote class="blockquote p-md-5 p-3">
+                    <p className="display-4">"A felicidade não está na estrada que leva a 
+                    algum lugar. A felicidade é a própria estrada."</p>
+                </blockquote>
+                <figcaption class="blockquote-footer text-white">
+                    Bob Dylan 
+                </figcaption>
             </section>
             
         </div>
