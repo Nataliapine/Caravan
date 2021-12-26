@@ -3,6 +3,12 @@ import './home.css';
 import California from '../../assets/img/california.jpg';
 import Paris from '../../assets/img/paris.jpg';
 import Dublin from '../../assets/img/dublin.jpg';
+import Passaporte from '../../assets/img/icones/passaporte.svg';
+import Translado from '../../assets/img/icones/translado.svg';
+import Passagens from '../../assets/img/icones/passagens.svg';
+import Bagagens from '../../assets/img/icones/bagagens.svg';
+import Praias from '../../assets/img/icones/praias.svg';
+import Turismo from '../../assets/img/icones/turismo.svg';
 
 export default function Home() {
     return (
@@ -61,8 +67,78 @@ export default function Home() {
                     </div>
                     
                 </div>
-                
             </div>
+            <section className="py-5 bg-light text-center">
+                <div className="container">
+                    <div className="my-5">
+                        <span className="h-6 d-block">TUDO DE MELHOR PARA VOCE</span>
+                        <h2 className="display-4 text-primary">Aproveite as Vantagens</h2>
+                    </div>
+                    <div className="row">
+                        <div className="col-xl-4 col-md-6">
+                            <div className="d-flex justify-content-center mt-4">
+                                <img  src={Passaporte} alt="Passaporte" />
+                            </div>
+                            <h3>Documentos</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit 
+                                amet vulputate felis, quis malesuada turpis. Sed sem neque, vulputate sit 
+                                amet vestibulum in, condimentum vitae urna
+                            </p>
+                        </div>
+                        <div className="col-xl-4 col-md-6">
+                            <div className="d-flex justify-content-center mt-4">
+                                <img  src={Passagens} alt="Passagens" />
+                            </div>
+                            <h3>Passagens</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit 
+                                amet vulputate felis, quis malesuada turpis. Sed sem neque, vulputate sit 
+                                amet vestibulum in, condimentum vitae urna
+                            </p>
+                        </div>
+                        <div className="col-xl-4 col-md-6">
+                            <div className="d-flex justify-content-center mt-4">
+                                <img  src={Translado} alt="Translado" />
+                            </div>
+                            
+                            <h3>Translado</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit 
+                                amet vulputate felis, quis malesuada turpis. Sed sem neque, vulputate sit 
+                                amet vestibulum in, condimentum vitae urna
+                            </p>
+                        </div>
+                        <div className="col-xl-4 col-md-6">
+                            <div className="d-flex justify-content-center mt-4">
+                                <img  src={Praias} alt="Praias" />
+                            </div>
+                            <h3>Praias</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit 
+                                amet vulputate felis, quis malesuada turpis. Sed sem neque, vulputate sit 
+                                amet vestibulum in, condimentum vitae urna
+                            </p>
+                        </div>
+                        <div className="col-xl-4 col-md-6">
+                            <div className="d-flex justify-content-center mt-4">
+                                <img  src={Bagagens} alt="Bagagens" />
+                            </div>
+                            <h3>Bagagens</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit 
+                                amet vulputate felis, quis malesuada turpis. Sed sem neque, vulputate sit 
+                                amet vestibulum in, condimentum vitae urna
+                            </p>
+                        </div>
+                        <div className="col-xl-4 col-md-6">
+                            <div className="d-flex justify-content-center mt-4">
+                                <img  src={Turismo} alt="Turismo" />
+                            </div>
+                            <h3>Turismo</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit 
+                                amet vulputate felis, quis malesuada turpis. Sed sem neque, vulputate sit 
+                                amet vestibulum in, condimentum vitae urna
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             
         </div>
     )
