@@ -1,10 +1,14 @@
 
 .collapse  {
-    float: right;
+    position: absolute;
+    right: 10px;
 }
 .box-shadow {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5),
                 0 4px 8px 0 rgba(0,0,0,0.5)
+}
+.navbar-bland {
+    margin-left: 6px;
 }
 
 @media screen and (max-width: 767px) {

@@ -40,7 +40,6 @@ export default function Header() {
                         <button className='btn btn-outline-primary ml-md-2'>Inscreva-se</button>
                     </form>
                     
-                    
                 </div>
             </nav>
         </div>
