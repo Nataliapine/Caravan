@@ -11,7 +11,7 @@ import Foto7 from '../../assets/img/local/foto-7.jpg';
 
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Locais() {
     return (
         <div>
             <Header />
