@@ -1,4 +1,6 @@
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+
 import './home.css';
 
 import California from '../../assets/img/california.jpg';
@@ -15,31 +17,32 @@ import { Link } from "react-router-dom";
 export default function Home() {
     return (
         <div>
-        <Header />
+            <Header />
+            
             <div className="container-fluid">
                 <div className="row bg-dark">
                     <div className="col-lg-7 p-0">
                         <div id="carouselCidades" className="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <ol className="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
-                                <div class="carousel-caption">
+                                <div className="carousel-caption">
                                     <h3 className="display-4">California</h3>
                                 </div>
                                     <img className="d-block w-100" src={California} alt="California" />
                                 </div>
                                 <div className="carousel-item">
-                                <div class="carousel-caption">
+                                <div className="carousel-caption">
                                     <h3 className="display-4">Paris</h3>
                                 </div>
                                 <img className="d-block w-100" src={Paris} alt="Paris" />
                                 </div>
                                 <div className="carousel-item">
-                                <div class="carousel-caption">
+                                <div className="carousel-caption">
                                     <h3 className="display-4">Dublin</h3>
                                 </div>
                                 <img className="d-block w-100" src={Dublin} alt="Dublin" />
@@ -146,15 +149,73 @@ export default function Home() {
                 </div>
 
             </section>
-            <section id="home-blockquote" className="text-center text-white p-md-5">
-                <blockquote class="blockquote p-md-5 p-3">
+            <section id="home-blockquote" className="text-center text-white p-md-5 py-2">
+                <blockquote className="blockquote p-md-5 p-3">
                     <p className="display-4">"A felicidade não está na estrada que leva a 
                     algum lugar. A felicidade é a própria estrada."</p>
                 </blockquote>
-                <figcaption class="blockquote-footer text-white">
+                <figcaption className="blockquote-footer text-white">
                     Bob Dylan 
                 </figcaption>
             </section>
+            <section className="container">
+                <div className="my-5 text-center">
+                    <span className="h-5 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+                    <h2 className="display-4 text-primary">Aproveite as Vantagens</h2>
+                </div>
+                <div className="row justify-content-center">
+                    <div className="col-lg-6" id="perguntasFrequentes" data-children=".pergunta">
+                        <div className="pergunta py-2">
+                            <a className="lead" data-toggle="collapse" data-parent="#perguntasFrequentes"
+                             href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">
+                               É possivel cancelar uma viagem?
+                            </a>
+                            <div id="pergunta1" >
+                                <p>
+                                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly 
+                                    used to demonstrate the visual form of a document or a typeface without relying 
+                                    on meaningful content. Lorem ipsum may be used as a placeholder before the final
+                                    copy is
+                                </p>
+                            </div>
+                        </div>
+                        <div className="pergunta py-2">
+                            <a className="lead" data-toggle="collapse" data-parent="#perguntasFrequentes"
+                             href="#pergunta2" aria-expanded="true" aria-controls="pergunta2">
+                               Qual garantia que tenho se perder o voo?
+                            </a>
+                            <div id="pergunta1">
+                                <p>
+                                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly 
+                                    used to demonstrate the visual form of a document or a typeface without relying 
+                                    on meaningful content. Lorem ipsum may be used as a placeholder before the final
+                                    copy is
+                                </p>
+                            </div>
+                        </div>
+                        <div className="pergunta py-2">
+                            <a className="lead" data-toggle="collapse" data-parent="#perguntasFrequentes"
+                             href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">
+                               Qual o melhor destino default viagem?
+                            </a>
+                            <div id="pergunta1">
+                                <p>
+                                    In publishing and graphic design, Lorem ipsum is a placeholder text commonly 
+                                    used to demonstrate the visual form of a document or a typeface without relying 
+                                    on meaningful content. Lorem ipsum may be used as a placeholder before the final
+                                    copy is
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="text-center my-5">
+                    <p>FALE CONOSCO PARA MAIS DÚVIDAS</p>
+                    <a className="btn btn-primary mt-1" href="#">Entre em Contato</a>
+                </div>
+                
+            </section>
+            <Footer />
             
         </div>
     )
