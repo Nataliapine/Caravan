@@ -18,7 +18,7 @@ export default function Locais() {
             
             <section className="container">
                 <div className="text-center my-5">
-                    <span className="h-6 d-block">O MELHOR DESTINO DA SUA VIAGEM</span>
+                    <h2 className="h6 d-block">O MELHOR DESTINO DA SUA VIAGEM</h2>
                     <h1 className="display-4 text-primary">Descubra Dublin</h1>
                 </div>
                 <div className="row">

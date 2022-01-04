@@ -1,6 +1,5 @@
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-// import './planos.css';
 import '../../components/Header/header.css';
 
 
@@ -41,7 +40,7 @@ export default function Planos() {
                                     <Link to="/" className="btn btn-primary btn-lg btn-block">Comprar Plano</Link>
                                 </div>
                                 <div className="col">
-                                    <span className="h4">5.000</span>
+                                    <span className="h4">R$ 5.000</span>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +69,7 @@ export default function Planos() {
                                     <Link to="/" className="btn btn-primary btn-lg btn-block">Comprar Plano</Link>
                                 </div>
                                 <div className="col">
-                                    <span className="h4">7.500</span>
+                                    <span className="h4">R$ 7.500</span>
                                 </div>
                             </div>
                             
